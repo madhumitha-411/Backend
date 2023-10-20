@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  h2{
+    text-align: center;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c94c4c;
+    height: 100vh;
+  }
+  .password-generator{
+    padding: 60px;
+    background-color:  #eea29a;
+    font-family: sans-serif;
+  }
+  .password-generator div{
+    display:flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  .password{
+    margin-top: 30px;
+    min-width: 280px;
+    background-color: antiquewhite;
+    
+  }
+  .password p {
+    padding: 3px 3px;
+  }
+  .password i {
+    padding: 3px 3px;
+  }
+
+.password-generator button {
+    width: 100%;
+    background-color: antiquewhite;
+    padding: 10px;
+  }

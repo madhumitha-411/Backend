@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password generator</title>
+    <link href="pg.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="password-generator">
+            <h2>Password Generator</h2>
+            <div class="password">
+                <p id="passwordBox"></p>
+                <i class="far fa-clipboard" onclick="copyPassword()"></i>
+            </div>
+            <div>
+                <label for="length">Length</label>
+                <input type="number" id="length" min="6" max="20" value="6">
+            </div>
+            <div>
+                <label for="symbol">Include Symbol</label>
+                <input type="checkbox" id="symbol" checked>
+            </div>
+            <div>
+                <label for="number">Include Number</label>
+                <input type="checkbox" id="number" checked>
+            </div>
+            <div>
+                <label for="lowerCase">Include LowerCase</label>
+                <input type="checkbox" id="lowerCase" checked>
+            </div>
+            <div>
+                <label for="upperCase">Include UpperCase</label>
+                <input type="checkbox" id="upperCase" checked>
+            </div>
+            <button onclick="createPassword()">Get Random Password</button>
+            <script src="pg.js"></script>
+        </div>
+    </div>
+</body>
+
+</html>
